@@ -33,10 +33,6 @@ class Person {
 }
 
 class MyHouse extends House {
-  constructor(key: Key) {
-    super(key);
-  }
-
   public openDoor(key: Key) {
     if (this.key.getSignature() === key.getSignature()) {
       this.door = true;
